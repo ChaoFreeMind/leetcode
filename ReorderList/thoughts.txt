@@ -1,0 +1,12 @@
+//Break the list into 2 halves 1->2 and 3->4
+//Reverse the second half 3->4 to 4->3
+//Merge 2 list 1->4->2->3
+
+
+1 2 3 4 5
+
+1 2 3 and 4 5
+4 5 reverse to 5 4
+merge 1 5 2 4 3
+
+We can use slow fast pointers to do the "Break the list" step!
