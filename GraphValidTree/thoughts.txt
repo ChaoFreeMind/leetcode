@@ -1,0 +1,4 @@
+According to the hint: 
+1. The Graph should be one connected component 2. The graph should not contain cycle
+
+My first attempt used BFS, the trick part of this problem is how to detect cycle. Here I used an array called visited, and there are 3 status during our BFS algorithm: Not visited, Being in the Queue(Being visited) and Completely visited. If there are 2 connected elements in the queue at the same time, it means they have created a cycle!
