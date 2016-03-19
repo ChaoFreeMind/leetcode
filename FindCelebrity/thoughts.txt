@@ -1,0 +1,22 @@
+For the second attempt, if i is a celebrity, then our candidate should know about i, thus if there is only one celebrity, he will be chosen after our first loop. The second loop is for the case that there is no such celebrity.
+
+public int findCelebrity(int n) {
+        
+        int cand = 0;
+        for(int i = 1; i < n; i++) {
+            if(knows(cand, i)) {
+                //Then i could be a potential celebrity
+                cand = i;
+            }
+        }
+        
+        for(int i = 0; i < n; i++) {
+            
+            if(i != cand && (!knows(i, cand) || knows(cand, i))) {
+                return -1;
+            }
+            
+        }
+        
+        return cand;
+    }
