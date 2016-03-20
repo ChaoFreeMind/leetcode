@@ -1,0 +1,2 @@
+The in degree and out degree should be zero after building the tree.
+
