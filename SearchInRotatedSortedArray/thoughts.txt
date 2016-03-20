@@ -1,0 +1,13 @@
+At first glance, this is a searching problem. The most naive way of solving it would be the O(n) brute force. Since it is marked as a hard problem, which leads us to binary search.
+
+The way I solve this problem is by enumerate different cases like:
+1: 1,2,3,4,5,6,7
+2: 5,6,7,1,2,3,4
+3: 4,5,6,7,1,2,3
+4: 3,4,5,6,7,1,2
+
+For instance: 3, 4, 5, 6, 7, 1, 2
+As we can see, when nums[mid] > nums[low], the left part of the array is sorted:
+In this case, if nums[low] <= target < nums[mid] it means the target is located in the left part of the array, else the target is located in the right part of the array.
+
+The same goes for nums[mid] < nums[low]
