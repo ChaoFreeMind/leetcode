@@ -1,1 +1,0 @@
-Find out the longer list and the shorter list, move the cursor of the longer list to make it catch up with the shorter one. And then loop until we find the intersection node.
