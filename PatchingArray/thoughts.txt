@@ -1,0 +1,1 @@
+This problem is more trickier than I thought. The basic idea is we patch to increase the max reach.The outer for loop is tricky to think of.

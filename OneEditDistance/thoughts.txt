@@ -1,0 +1,4 @@
+Note that edit distance is defined as: Perform substitute, insert or delete to transform one string to the other.
+
+insert and delete could be merged into one function.
+
