@@ -1,0 +1,1 @@
+First of all we need to generate the left half of the string, and run backtrack on it to generate all permutations of the solution. For example, abba we only need the left part of the string and permutate based on it.

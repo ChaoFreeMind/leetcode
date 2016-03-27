@@ -1,0 +1,1 @@
+Use a stack. Be sure to cover all situations. Like after the iteration what if the stack is not empty? "(("
