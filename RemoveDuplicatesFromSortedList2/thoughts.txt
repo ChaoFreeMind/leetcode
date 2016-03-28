@@ -1,0 +1,1 @@
+Make a dummy head to keep track of the break point, you have to break and skip over duplicates and then reconnect the list.

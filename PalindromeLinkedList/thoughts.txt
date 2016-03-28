@@ -1,0 +1,4 @@
+O(n) space algorithm is trivial. Here we only gonna talk about O(1) space.
+To get O(1) space we need to reverse the right half of the list, and compare it to the left part of the list. 
+
+Note that we can use the 2 pointers(slow fast pointers) to find the head of the right part of the list.
