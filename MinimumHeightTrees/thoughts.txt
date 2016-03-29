@@ -1,0 +1,5 @@
+We need to find the mid one or two points of the longest path in the graph. 
+First choose a random node say 0, run BFS on it and find out the node V that has the longest distance from node 0, then node V must be one side of the longest path in our graph, run BFS again on V then we can get the longest path from node V say U, finally we only need to return the middle one or two nodes depending on the length of the path is even or odd.
+
+
+There is easier way to solve this problem!! Check out the discussion
