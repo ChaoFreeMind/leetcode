@@ -1,0 +1,1 @@
+Others idea: For "aa" "ccc", => 2/aa3/ccc The code is quite straight forward to understand.
