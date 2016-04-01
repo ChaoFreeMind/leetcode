@@ -1,0 +1,3 @@
+Merging intervals:
+
+Sort the intervals by start time, maintain a priority queue(min heap by end time), go through all intervals, add each one of them to our heap, decide if the earilest start time interval can be merged into the earilest finish interval. Merging the intervals could be thought as putting those intervals in one room.
