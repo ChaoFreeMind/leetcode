@@ -1,0 +1,1 @@
+The basic idea is to run DFS starting from JFK, when we have enough nodes collected in our path list, terminate the search. Note that we have to delete(Think of it as someone used the ticket) tickets in adjacent map along the way.
