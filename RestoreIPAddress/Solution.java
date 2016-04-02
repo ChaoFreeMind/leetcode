@@ -1,12 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Solution {
-    
-    public static void main(String[] args) {
-        System.out.println(new Solution().restoreIpAddresses("25525511135"));
-    }
-    
     public List<String> restoreIpAddresses(String s) {
         
         List<String> resList = new ArrayList<>();
@@ -29,7 +21,11 @@ public class Solution {
         
         for(int i = 1; i <= 3; i++) {
             if(pos + i > str.length()) break;
+            
             String s = str.substring(pos, pos + i);
+            
+            if(s.length() > 1 && s.startsWith("0")) break;
+            
             if(Integer.parseInt(s) >= 0 && Integer.parseInt(s) <= 255) {
                 ipList.add(s);
                 backtrack(resList, str, ipList, pos + i);
@@ -50,5 +46,4 @@ public class Solution {
         
         return sb.toString();
     }
-    
 }
