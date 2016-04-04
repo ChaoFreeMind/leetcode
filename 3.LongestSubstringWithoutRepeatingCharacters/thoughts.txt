@@ -1,0 +1,1 @@
+For this problem, we need to iterate through the string char by char, for each character, we maintain a last seen hash table, if it has been seen before and the last index is before current start, we break string right after the last seen to current char. 
