@@ -1,0 +1,2 @@
+xor cancels out 2 same numbers. a xor a ==  0
+
