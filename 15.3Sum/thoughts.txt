@@ -1,0 +1,1 @@
+First sort the array, Iterate through the array, assume each element we see is the first number, use two pointers to find the second and third numbers. Be extra careful  for the duplications(All three numbers may have duplication)!

@@ -1,0 +1,5 @@
+1. We can reverse the number and compare it to the original number.
+
+2. We can iterate through half of the digits, and then decide if right / 10 == x(odd) && x == right(even) However we have to take care of special cases like 10 , 0 
+
+In the end dont forget to take care of numbers that are blow zero!!
