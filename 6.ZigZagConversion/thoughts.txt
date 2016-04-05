@@ -1,0 +1,1 @@
+Straight forward solution, easy to make mistake, be careful for index boundary check.
