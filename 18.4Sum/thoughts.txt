@@ -1,0 +1,1 @@
+Same idea as three sum, the difference would be we have to iterate through the array to find the first and second number, only after that can we use two pointers. Code is really messy, but this is an n cube complexity problem which is insane.

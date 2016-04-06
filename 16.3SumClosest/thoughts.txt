@@ -1,0 +1,1 @@
+Same idea as 3sum, the only difference is that this problem do not need to worry about duplicates!
