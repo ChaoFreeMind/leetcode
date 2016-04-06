@@ -1,0 +1,3 @@
+BFS solution is easy to come up. 
+
+Will implement DFS when we come across this problem again

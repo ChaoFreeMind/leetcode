@@ -1,0 +1,1 @@
+Boring problem...Keep track of next position to fill, compare current element with the previous one.

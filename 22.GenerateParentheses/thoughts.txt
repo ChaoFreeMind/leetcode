@@ -1,0 +1,1 @@
+The key is to write this backtracking function based on the number of left and right parentheses. 

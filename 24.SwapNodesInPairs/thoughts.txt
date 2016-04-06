@@ -1,0 +1,1 @@
+Iterate through the list 2 nodes at once. Just be careful when messing with all the pointers.

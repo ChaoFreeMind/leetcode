@@ -1,0 +1,1 @@
+Dummy head, pretty easy one to implement.
