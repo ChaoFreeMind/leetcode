@@ -1,0 +1,5 @@
+Very tricky to make the code concise.
+
+Take advantage of i/3 and i%3 would help greatly!!
+
+Refering to: https://leetcode.com/discuss/27272/shared-my-concise-java-code

@@ -1,0 +1,1 @@
+Binary search, good for practicing!
