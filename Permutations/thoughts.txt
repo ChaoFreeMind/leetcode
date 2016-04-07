@@ -1,1 +1,0 @@
-This problem is apparently a backtracking problem(DFS), the only thing we have to be ware of is to use a visited boolean array to prevent duplications.

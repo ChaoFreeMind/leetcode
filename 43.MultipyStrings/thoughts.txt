@@ -1,0 +1,1 @@
+Multiply every digits of the 2 numbers reversely, for example 99 * 12, the num1[i] * num1[j] would be put into lenA - i - 1 + lenB - j - 1 in the digits array. After we populated the digits array, we do carry on each cell as a result, digits array will contain our result in reverse order.

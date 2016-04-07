@@ -1,0 +1,1 @@
+The tricky part of the problem would be how to skip duplicates. By observation, for example, [1,1,2], we can see that we can not visit the second 1 before the first one, thus, we can use if(i > 0 && !visited[i-1] && nums[i] == nums[i-1]) to make sure our iteration sequence is correct.

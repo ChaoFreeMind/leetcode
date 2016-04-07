@@ -1,0 +1,3 @@
+The key of this problem is how to remove duplicates. Example: [1,1] 2
+
+Think hard!
