@@ -1,0 +1,1 @@
+For every bit in a number, there will be couple of zeros and ones, if we can get the number of ones in each bit, we can modulo by three to get the bit contributed by the number we want.

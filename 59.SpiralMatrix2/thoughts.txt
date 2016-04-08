@@ -1,0 +1,1 @@
+My solution is derived from spiral matrix, there are easier solutions which use directions, check those out later.

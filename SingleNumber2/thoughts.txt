@@ -1,1 +1,0 @@
-If there are 2 different numbers a and b, there will be some bit that are different, say bit i.  
