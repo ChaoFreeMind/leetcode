@@ -1,0 +1,3 @@
+This problem is a classical dp problem, but hard to come up the solution. Check out Kadane's alorithm. 
+
+The devide and conquer method is still vague to me.

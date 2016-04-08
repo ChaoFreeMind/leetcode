@@ -1,0 +1,2 @@
+For each string in strs, we create a bucket list for it, for example, "eat" and "tea" will be put into the same bucket list whose key being its sorted version, "aet". 
+Note that to sort a string, we can first convert it to a char array, sort the array, create a new string by the sorted char array. 
