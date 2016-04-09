@@ -1,0 +1,1 @@
+Dynamic programming: int[i][j] denotes the ways to get to i,j from 0,0.
