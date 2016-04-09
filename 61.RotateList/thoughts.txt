@@ -1,0 +1,5 @@
+First get the length of the list.
+Second move cursor to (len - k%len)
+Third do the rotation
+
+Another way(More preferable): Form a circle, move the tail cursor forward for (len-k%len) steps, break the list.
