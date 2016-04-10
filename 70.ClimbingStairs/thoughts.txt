@@ -1,0 +1,1 @@
+First write it with standard dp solution, and then try to get rid of those unused memories

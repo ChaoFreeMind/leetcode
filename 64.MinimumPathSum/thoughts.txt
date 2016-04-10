@@ -1,0 +1,1 @@
+Easy problem with dynamic programming, not sure if there is better solution or not but will be back and review this problem.

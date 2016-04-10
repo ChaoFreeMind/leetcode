@@ -1,0 +1,2 @@
+Use the first row and col to mark if we should clear this row or col.
+The tricky part of this problem is to realize that the diff between original zero and cleared out zero!
