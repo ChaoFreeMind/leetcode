@@ -1,0 +1,3 @@
+2 passes: Count the number of zeros, ones, and twos, set the array according to their counts.
+
+1 pass: two pointers, one for zero the other for two, swap 2 to the right and zero to the left. be careful for twos, [2,1,2], you have to recheck the current element after swapping.

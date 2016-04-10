@@ -1,0 +1,5 @@
+2D binary search.
+First locate the row index of target, by comparing it with range of each row.
+Once we had the row index, run a regular binary search on that row to locate the target.
+
+Time complexity is O(lgm) + O(lgn) = O(lgmn)
