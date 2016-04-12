@@ -1,0 +1,1 @@
+If current element holds the same value with the next one, cur.next = cur.next.next, is that easy!

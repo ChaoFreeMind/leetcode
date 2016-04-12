@@ -1,0 +1,2 @@
+For example, if n is 6, typically we would iteratively multiply x for 6 times. However, by computing n^3 we would only need to multiply the result of n^3 to get the final result. 
+A simple recursive function would do it.

@@ -1,3 +1,0 @@
-For this problem, the key to remove duplicates is to use its index to identify each elements, for example: 1(0), 1(1), 2 there will be 1(0),1(1),2 and 1(1),1(0),2. During our backtracking, if duplicated number is found, we don't simply skip it, we check if the element's index is bigger than previously visited duplicates. If it's bigger, then we don't skip it, or we skip it.
-
-My first attempt was to use a hashMap to keep track of the last visited index of each number but it went kind of messy...Sorting the array will do the trick!!!
