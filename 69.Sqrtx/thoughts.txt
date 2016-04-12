@@ -1,0 +1,3 @@
+Binary search, but some tricky parts.
+First, you have to compare mid and x / mid to divide the problem size.
+Second, when we have a mid < x/mid, mid could be our solution.
