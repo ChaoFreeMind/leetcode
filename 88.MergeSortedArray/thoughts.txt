@@ -1,0 +1,1 @@
+If we merge them from the beginning, one of the array would be unsorted, but if we do it backwards, it would be fine.
