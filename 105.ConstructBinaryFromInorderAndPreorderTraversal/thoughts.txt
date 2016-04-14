@@ -1,0 +1,3 @@
+First choose the root node from the first element of preorder sequence, then find where it is in the inorder array, it is the point in inorder[] that seperates the left and right subtrees. Continue doing this, note that we only need the starting index of preorder array. 
+
+Dont forget the exit conditions.

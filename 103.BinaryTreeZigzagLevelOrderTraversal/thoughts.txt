@@ -1,0 +1,1 @@
+brah, you have to realize this is basically level order traversal, just the way you add element to the row list that matters.

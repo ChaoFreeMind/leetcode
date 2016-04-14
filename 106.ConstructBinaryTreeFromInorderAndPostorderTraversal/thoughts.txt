@@ -1,0 +1,1 @@
+Almost the same idea as constructing the binary tree from inorder and preorder, the only difference is we need to take the end of postorder as the root value.

@@ -1,0 +1,1 @@
+Almost the same as level order traversal, just add the row array to the start of the result set.
