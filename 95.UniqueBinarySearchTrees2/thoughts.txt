@@ -1,0 +1,1 @@
+For this problem, we can iterate through 1 to n to treat them as root, and generate its left and right tree respectively. And them assemble them all together.
