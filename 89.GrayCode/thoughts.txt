@@ -1,0 +1,1 @@
+There is a commonly known formula to generate gray code of n bits from the gray codes of n-1. 1. Add a zero to all of the gray codes of n-1 bits, add a one to all of the gray codes of n-1 bits, reverse the second list, concatenate 2 lists. 

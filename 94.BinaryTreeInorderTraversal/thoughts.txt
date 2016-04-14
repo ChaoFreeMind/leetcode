@@ -1,0 +1,1 @@
+First go down the left branch, add all nodes along the way into a stack, after doing this, pop a node from stack, add the val to result list, and then do the same thing on it.

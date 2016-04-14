@@ -1,3 +1,5 @@
 Dynamic programming: int[i][j] denotes the ways to get to i,j from 0,0.
 
+Improvement: Only record one column or one row is suffice
+
 Another approach: Math
