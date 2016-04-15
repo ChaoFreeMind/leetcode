@@ -1,0 +1,1 @@
+For this problem, the key is to find the mid point. We can use fast and slow runner technique in linked list to find the mid point, the rest would be intuitive, just need to be careful with the exit condition.
