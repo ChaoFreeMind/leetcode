@@ -1,0 +1,1 @@
+Read the description of the problem carefully! The definition of min depth is the number of nodes from the root to the nearest leaf node!! If there is only one root, then it can be treated as a leaf node. If there is a root with only a right child, then root can not be a leaf node, we should return 2 not 1

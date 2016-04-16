@@ -1,0 +1,1 @@
+Top down solution, use an array to keep track of the minimum path including this element in triangle. 

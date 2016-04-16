@@ -1,0 +1,1 @@
+Write concise code, wrap all logic into one for loop
