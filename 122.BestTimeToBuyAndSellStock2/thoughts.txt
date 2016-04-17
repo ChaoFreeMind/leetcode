@@ -1,0 +1,1 @@
+To acquire max profit, we can buy and sell everytime when there is a profit which means everytime we detect a chance of positive profit gain, we can add it to the maxprofit, this is kind of like greedy.

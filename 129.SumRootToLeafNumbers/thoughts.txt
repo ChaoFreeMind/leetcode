@@ -1,0 +1,3 @@
+For this problem, we can run a bfs, use a string builder to keep track of the numbers along the way, every time when we reached the leaf node, we add the number to the sum. 
+
+My first attempt was to use string to keep track of the number along the way, but it was not an efficient way, especially in the case of recursion. The improvement would be to use integer instead of string

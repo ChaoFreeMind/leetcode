@@ -1,0 +1,1 @@
+To get the maximum profit, we have to keep track of the minimum price before current day.
