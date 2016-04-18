@@ -1,0 +1,5 @@
+2 keys to solve this problem:
+
+1. If the sum of all gas[i] - cost[i] is less than zero, there will not be any solution to this problem.
+
+2. Say we start from A and we run out of gas when we reached C, then gas[C] - cost[C] must be a negative number big enough to counter the all the gas we accumulate from A to C exclusive. Thus, there will not be any potential starting point between A and C.
