@@ -1,1 +1,0 @@
-By observation, we can see that all ‘O’ regions that touch the border of the board will remain untouched, so we could just execute BFS from the border of our board.

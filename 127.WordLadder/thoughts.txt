@@ -1,0 +1,3 @@
+Start BFS from begin word, for each word, we try to transform it to all strings possible, and see if the string is in the word list. We need a visited set because we are dealing with a graph, it will have circles!
+
+There is a faster way which is to use double end BFS, will implement it later on.
