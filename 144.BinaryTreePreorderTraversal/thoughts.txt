@@ -1,0 +1,1 @@
+One stack would be enough to finish it. The iterative version of inorder is more complex than this one.
