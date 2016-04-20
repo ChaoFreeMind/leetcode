@@ -1,0 +1,4 @@
+You have to recognize that this problem is just a standard backtracking problem. 
+For every time we find a palindrome, we partition it, and take the rest of substring into the next level.
+
+We can use dp to speed up the check palindrome process. dp[j][i] denotes if substr(j,i) is a palindrome
