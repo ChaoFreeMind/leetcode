@@ -1,0 +1,1 @@
+Most importantly, you have to know how insertion sort works. Basically we keep a sorted list and an unsorted list, iterate through the unsorted list, for each element in the unsorted list, we try to insert it to the correct position of sorted list so that it will remain sorted. Leverage dummy node!
