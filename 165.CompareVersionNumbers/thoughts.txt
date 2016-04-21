@@ -1,0 +1,1 @@
+Be careful with . in regular expression, s.split("\\.")!!! Go with the concise version of the code!

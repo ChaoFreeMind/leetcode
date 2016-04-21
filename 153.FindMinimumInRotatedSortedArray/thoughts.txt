@@ -1,0 +1,3 @@
+Binary search, you have to be very very careful with all corner cases! [1,2] and [2,1]
+
+mid can only be eaqual with the left!!

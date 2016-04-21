@@ -1,0 +1,3 @@
+First trim the string, and split by regular expression matching multiple white characters: \s+.
+
+Deal with "": you will get an empty string in the split result array with an empty string.

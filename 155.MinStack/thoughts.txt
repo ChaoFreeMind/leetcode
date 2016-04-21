@@ -1,0 +1,4 @@
+There are multiple ways of solving this problem, many of them are better than mine.
+
+My way: When we are pushing elements into the stack, we first push the element itself, then push the min value of our stack after pushing the element. For example, we want to push 1,2 into the stack, the stack will look like this: bottom 1,1,2,1 top.
+
