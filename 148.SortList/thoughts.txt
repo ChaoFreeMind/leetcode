@@ -1,0 +1,3 @@
+It is important to know how merge sort works. First of all, we break the list into two halves, left and right, then we call recursive sorting function on two sublists, and merge the two sorted lists.
+
+It is very convenient to use a dummy head for the merging process.
