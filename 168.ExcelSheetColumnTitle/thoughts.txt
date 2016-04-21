@@ -1,0 +1,1 @@
+A-Z 1-26 is one-based, we have to convert it to zero based and compute!!Thats why we have n-- at the beginning of the loop.
