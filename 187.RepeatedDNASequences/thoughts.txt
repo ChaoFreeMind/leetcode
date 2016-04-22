@@ -1,0 +1,1 @@
+Keep track of two sets, all and res, iterate through the DNA sequence, try to add all of sequences of length of 10 to all, when add returns false, it means the current sequence has been added previously, so we add it to the resSet.

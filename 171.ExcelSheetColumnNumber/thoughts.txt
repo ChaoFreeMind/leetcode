@@ -1,0 +1,1 @@
+Think of it as 10 based, each time we meet a character, we first enlarge the current result by 26 and add the value of new character.

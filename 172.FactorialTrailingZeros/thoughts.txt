@@ -1,0 +1,2 @@
+Count the number of multiple of 5s in range of [1,n].
+Note that the multiple of 5 will provide one 5, however those numbers like 25 and 125 will provide extra 5s. 25 for one more 5 and 125 for 2 more 5s. Thus we can come up with the following equation: Number of 5s = n / 5 + n / 25 + n / 125 + …

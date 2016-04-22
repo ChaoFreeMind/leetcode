@@ -1,0 +1,1 @@
+For this problem, you have to realize this is an in order traversal of a tree(Iterative). First off, we go down the left branch of current pointer, when we reach null, it means we reach the end of left branch, we can output the value of the top of stack, and set current to point to the right branch of the top node. This is a very interesting problem! 
