@@ -1,0 +1,1 @@
+There is a clever way of comparing 2 strs like 9 and 30 which is compare 930 and 309. The leading zeros situations are very easy to miss, bear in mind!
