@@ -1,0 +1,3 @@
+It is obvious that we should use dp for this problem, first come up with the equation: dp[i] = max(dp[i-1], dp[i-2] + nums[i]) then do not forget to deal with the corner cases!!
+
+Optimization: we only need dp[i-1] and dp[i-2] so we can reduce the array to 2 variables.
