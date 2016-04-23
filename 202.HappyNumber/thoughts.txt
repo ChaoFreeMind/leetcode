@@ -1,0 +1,1 @@
+Use a set to store all the generated numbers, when we see a duplicate, it means we are caught in a cycle, just return false. During the process, if we find a one, return true.
