@@ -1,0 +1,3 @@
+Sliding window! Expand to the right, shrink from the left. Think carefully about the conditions in while loop
+
+Also check out Binary search method

@@ -1,0 +1,4 @@
+There are 2 ways in general, DFS and BFS.
+DFS solution is more intuitive, for each course, run dfs on it, during the process, if we revisit a node, there must be a cycle. 
+
+For BFS solution, we have to build a indegree array to keep track of the number of prerequisite courses we need to finish before we can finish current course. Start the BFS queue with those nodes that has 0 prerequisites. 
