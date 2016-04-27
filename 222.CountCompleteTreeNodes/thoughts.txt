@@ -1,0 +1,1 @@
+In each recursive call, we can check if left height and right height are equal, if they are equal, it means the tree is completely filled, then we can return 2^h - 1 as the number of nodes. If it does not, we are going to go left and right with our recursive call.

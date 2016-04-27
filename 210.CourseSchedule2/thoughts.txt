@@ -1,0 +1,1 @@
+BFS + indegree: same thing as course schedule1, just return new int[0] to represent an empty array.
