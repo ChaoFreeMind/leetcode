@@ -1,0 +1,1 @@
+The power of two has only one bit set to 1, all others are 0. There is a clever way: 1000 & 0111 == 0
