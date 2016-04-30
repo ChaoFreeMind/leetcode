@@ -1,0 +1,1 @@
+Since it is a BST, we can assume there is no duplicates. By observation, it is easy to see that if the value of two nodes are bigger than the root, then it means the LCA must be in the right subtree. If the value of two nodes are both smaller than the root, the LCA must be in the left subtree.
