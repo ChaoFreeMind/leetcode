@@ -1,0 +1,1 @@
+The key is where to start our search. This is more like a linear search.

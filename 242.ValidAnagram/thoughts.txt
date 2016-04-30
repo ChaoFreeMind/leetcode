@@ -1,0 +1,1 @@
+The follow up of this problem is a little bit trickier. When we are talking about unicode, it is really not that different: it is a \uXXXX(X represents a hex digit). PS: A char in java is two bytes long!!!
