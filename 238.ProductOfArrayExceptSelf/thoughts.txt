@@ -1,0 +1,2 @@
+The output at index i equals to the product of left part(0 to i-1) multiply the product of right part(i+1 to n), we can solve this problem in two passes.
+The first pass store the product of all numbers from 0 to i-1 to output[i], the second pass compute the actual product of the output. 
