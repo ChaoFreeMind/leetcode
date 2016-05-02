@@ -1,0 +1,1 @@
+2 ways: O(nlgn) and O(n)
