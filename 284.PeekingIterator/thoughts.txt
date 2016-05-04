@@ -1,0 +1,1 @@
+The key is to cache the next available element! This problem seems simple, but hard to come up.
