@@ -1,0 +1,1 @@
+Use a 2 bit number to represent four states, current live, current dead, next live, next dead.

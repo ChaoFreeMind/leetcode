@@ -1,0 +1,1 @@
+Bijection means it is a 2 way relationship between a character in pattern and a word in str. You have to consider both!!
