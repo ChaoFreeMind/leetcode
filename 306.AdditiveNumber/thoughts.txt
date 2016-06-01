@@ -1,0 +1,1 @@
+First we have to see that once we have the first and second number in the sequence, we have all the rest of the numbers. So the length of the first number should be [0, len/2]. For the second number, we have to satisfy that the length of the rest would be equals or longer than the longer one of the first and second number.
