@@ -1,0 +1,1 @@
+THe key to solving this problem is how to quickly decide if two strings share any letters or not. Since the words only contains lower case characters, we can use a int number as a mask to mark if a letter is in the word. By comparing mask[i] and mask[j], we can decide by if the result is 0.

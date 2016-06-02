@@ -1,0 +1,1 @@
+There are at least three ways of solving it, make sure to implement all of them.
