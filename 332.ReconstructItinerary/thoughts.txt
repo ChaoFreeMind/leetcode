@@ -1,0 +1,1 @@
+Find the Euler path(A path that visits each edge exactly once): Go down the path starting from JFK, if we stuck at some point F, then F will be the only exit point. 
