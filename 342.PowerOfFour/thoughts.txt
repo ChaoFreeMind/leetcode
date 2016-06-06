@@ -1,0 +1,2 @@
+The follow-up is a very interesting bit manipulation practise! 
+Ox55555555 Hexidecimal representation: a 5 is 0101.
