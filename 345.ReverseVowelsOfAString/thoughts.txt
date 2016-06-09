@@ -1,0 +1,1 @@
+Use two pointers positioned at two sides of the array, move them to the middle, always keep them pointing to the vowels. Swap if they are both point to a vowel. Idea is simple, but you have to be careful.
