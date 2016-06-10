@@ -1,0 +1,1 @@
+First split the number into 2 halves: then split each one of the 2 halves to maximize the product.
