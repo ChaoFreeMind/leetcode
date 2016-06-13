@@ -1,0 +1,1 @@
+Use an array of n + 1 to specify if i is a composite number. If i is a prime, then we can start from it and generate all multiples of i less than n. Mark all those numbers as composite. Keep doing it util we reach n.
