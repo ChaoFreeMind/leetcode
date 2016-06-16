@@ -1,0 +1,1 @@
+The getFeed method is not optimal, it will take O(NlogN) to add all feeds to the PriorityQueue.

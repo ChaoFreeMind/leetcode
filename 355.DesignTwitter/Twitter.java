@@ -9,9 +9,9 @@ import java.util.Set;
 public class Twitter {
     class Tweet {
    // class Tweet implements Comparable<Tweet> {
-        long timestamp;
+        int timestamp;
         int tweetId;
-        Tweet(int tweetId, long timestamp) {
+        Tweet(int tweetId, int timestamp) {
             this.tweetId = tweetId;
             this.timestamp = timestamp;
         }
@@ -30,7 +30,7 @@ public class Twitter {
     private Map<Integer, List<Tweet>> tweets;//Map the userId to all of his posts.
     private Map<Integer, Set<Integer>> followees;//Map the userId to all users he follows.
     /** Initialize your data structure here. */
-    private static long timestamp = 0;
+    private static int timestamp = 0;
 
     public Twitter() {
         tweets = new HashMap<>();
@@ -49,7 +49,7 @@ public class Twitter {
     /** Retrieve the 10 most recent tweet ids in the user's news feed. Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
     public List<Integer> getNewsFeed(int userId) {
         //PriorityQueue is default as a min-heap 
-        PriorityQueue<Tweet> feeds = new PriorityQueue<>(new Comparator<Tweet>() {
+        /*PriorityQueue<Tweet> feeds = new PriorityQueue<>(new Comparator<Tweet>() {
             public int compare(Tweet tw1, Tweet tw2) {
                 //tw2.timestamp - tw1.timestamp
                 if(tw2.timestamp > tw1.timestamp) {
@@ -60,7 +60,8 @@ public class Twitter {
                     return 0;
                 }
             }
-        });
+        });*/
+        PriorityQueue<Tweet> feeds = new PriorityQueue<Tweet>((Tweet tw1, Tweet tw2) -> (tw2.timestamp - tw1.timestamp));
         
         if (tweets.containsKey(userId)) {
             for(Tweet tweet: tweets.get(userId)) {
