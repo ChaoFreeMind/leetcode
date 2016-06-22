@@ -38,7 +38,7 @@ public class Solution {
 
         //Sort
         for(List<String> list: map.values()) {
-            Arrays.sort(list);∏
+            Arrays.sort(list);
         }
 
         route.add("JFK");
