@@ -18,6 +18,7 @@ public class Solution {
 		List<Integer> resList = new ArrayList<>();
 		if(root == null) return resList;
 		Deque<TreeNode> stack = new ArrayDeque<>();
+		stack.push(root);
 		while(!stack.isEmpty()) {
 			TreeNode node = stack.pop();
 			resList.add(node.val);
