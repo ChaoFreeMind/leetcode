@@ -1,3 +1,0 @@
-This is a typical DFS BFS problem, traverse the borad and when we find a '1', we run bfs/dfs to sink it(Mark all '1's to 'M'), the number of bfs/dfs would be the number of islands.
-
-I still don't know why DFS is faster than BFS...
