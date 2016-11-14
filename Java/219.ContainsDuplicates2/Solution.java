@@ -1,5 +1,6 @@
 public class Solution {
-	// Time O(n) Space O(n)
+
+    // Naive way
     // public boolean containsNearbyDuplicate(int[] nums, int k) {
     // 	if (nums == null || nums.length == 0) return false;
     // 	Map<Integer, Integer> map = new HashMap<>();
@@ -12,15 +13,14 @@ public class Solution {
     // 	}
     // 	return false;
     // }
-	
+
+    // Improved sliding window way
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-    	if (nums == null || nums.length == 0) return false;
-    	Set<Integer> set = new HashSet<>();
-    	for (int i = 0; i < nums.length; i++) {
-    		// Maintain a sliding window
-    		if (i > k) set.remove(nums[i-k-1]);
-    		if (!set.add(nums[i])) return true;
-    	}
-    	return false;
-    }
+        Set<Integer> set = new HashSet<Integer>();
+        for(int i = 0; i < nums.length; i++){
+            if(i > k) set.remove(nums[i-k-1]);
+            if(!set.add(nums[i])) return true;
+        }
+        return false;
+ }
 }
