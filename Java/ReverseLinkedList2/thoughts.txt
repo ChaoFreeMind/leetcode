@@ -1,3 +1,0 @@
-Basic ideas: Move our cursor to the start of m,(keep track of prev and cur) execute reverse operation from m to n, reconnect the sublist to our main list.
-
-Note: Use dummy head to avoid null pointer exception! Try to come up with different corner cases!

@@ -1,3 +1,0 @@
-This problem seems easy, but very easy to make mistake. My first bad attempt was to go through the array and swap all elements that are equals to val to the right side of the array, this will be wrong if [3,2,2,3] 3 and 3 will not be swapped.
-
-The alternative is to put elements which is not equals to val to the left side of the array.

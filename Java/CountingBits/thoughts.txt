@@ -1,1 +1,0 @@
-By obervation, we can see that num and num / 2 has some kind of relationship, that is, << 1 !! 

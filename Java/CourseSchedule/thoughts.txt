@@ -1,5 +1,0 @@
-This problem is equivalent to finding cycle in a directed graph. There are basically 2 ways to solve this problem.
-
-BFS: 
-
-First find all the base courses which has no prerequisite. Run BFS on them and keep track of the indegrees of each node. In the process of BFS, if the indegree of a node is reduced to zero, it means this course can be finished. So we add it into the queue and start a new search from it. (Implementation is very error proning!)

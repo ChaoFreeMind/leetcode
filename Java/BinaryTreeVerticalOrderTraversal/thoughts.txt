@@ -1,1 +1,0 @@
-This problem is BFS + HashMap: BFS to keep the order of the nodes we are visiting, and map to keep track of the which col map to which array list. Beware of updating the min and max on the fly in BFS.

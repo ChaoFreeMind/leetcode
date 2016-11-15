@@ -1,5 +1,0 @@
-Starting from any gas station, assume gas station i is the potential starting point, 
-keep track of the volume of our gas tank, if our gas tank is above zero then it means we can go from our chosen starting point
-to the current gas station, if the gas tank is below zero, then all points from i to current gas station can not be our starting point.
-So we keep going, until we reach the end. The last start we recorded along the way will be our starting point, or if totalGas - totalCost < 0, 
-there is no solution.

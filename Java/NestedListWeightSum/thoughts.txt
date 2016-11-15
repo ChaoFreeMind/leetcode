@@ -1,1 +1,0 @@
-Pretty intuitive problem. The nestedlist is defined recursively, so we need to write a recursive function to get the weight. 

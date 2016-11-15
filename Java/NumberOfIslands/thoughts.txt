@@ -1,2 +1,0 @@
-Observation: The number of island is equal to the number of dfs we can perform on each island.
-(Mark '1' to 'x' as visited)

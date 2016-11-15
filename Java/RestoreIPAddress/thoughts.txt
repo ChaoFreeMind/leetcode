@@ -1,2 +1,0 @@
-Algorithm: Backtracking, early proning at any point nesscessary. 
-

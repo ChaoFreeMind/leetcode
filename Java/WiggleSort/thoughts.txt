@@ -1,9 +1,0 @@
-Problem: Given an unsorted array nums, reorder it in-place such that nums[0] <= nums[1] >= nums[2] <= nums[3]....
-
-For example, given nums = [3, 5, 2, 1, 6, 4], one possible answer is [1, 6, 2, 5, 3, 4].
-
-Algorithm: 
-1. Time: O(nlogn) Space: O(1): First sort the array, group each of 3 element 
-together, swap i and i-1, i+=2
-
-2. Time: O(n) Space: O(1): According to the definition of the wiggle sort, when we are at even index, we should get nums[i] <= nums[i-1]; when we are at odd index, we should get nums[i] >= nums[i-1].

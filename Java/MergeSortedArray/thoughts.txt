@@ -1,1 +1,0 @@
-Went though the 2 arrays from their last elements respectly and fill up the array from m to (m+n-1).
