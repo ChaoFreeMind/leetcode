@@ -10,21 +10,28 @@
 //There are 3 ways of solving this problem!
 public class Solution {
 
+    // O(n) time O(n) space
     public int[] intersection(int[] nums1, int[] nums2) {
-    	
-    	Set<Integer> setA = new HashSet<>();
-    	Set<Integer> setB = new HashSet<>();
-    	for(int i = 0; i < nums1.length; i++) {
-    		setA.add(nums1[i]);
-    	}
+        
+        Set<Integer> setA = new HashSet<>();
+        Set<Integer> setB = new HashSet<>();
+        for (int i = 0; i < nums1.length; i++) {
+            setA.add(nums1[i]);
+        }
 
-    	for(int i = 0; i < nums2.length; i++) {
-    		if(setA.contains(nums2[i])) setB.add(nums2[i]); 
-    	}
+        for (int i = 0; i < nums2.length; i++) {
+            if (setA.contains(nums2[i])) setB.add(nums2[i]); 
+        }
 
-    	int[] result = new int[setB.size()];
-    	setB.toArray(result);
-    	return result;
+        setA.retainAll(setB);
+        // setA is the intersection set
+        int[] result = new int[setA.size()];
+        int idx = 0;
+        // Put all elements of setA in result array
+        for (int num: setA) {
+            result[idx++] = num;
+        }
+        return result;
     }
 
 }
