@@ -1,27 +1,44 @@
 public class Solution {
+
     public String convert(String s, int numRows) {
-    	
-    	if(numRows == 0) return "";
-    	
-        StringBuilder[] sbs = new StringBuilder[numRows];
         
-        for(int i = 0; i < sbs.length; i++) sbs[i] = new StringBuilder();
+        if (s == null || s.length() == 0) return s;
+
+        StringBuilder[] lines = new StringBuilder[numRows];
+        // for (StringBuilder line: lines) {
+        //     line = new StringBuilder();
+        // }
+
+        for (int i = 0; i < lines.length; i++) lines[i] = new StringBuilder();
+
         int i = 0;
-        while (i < s.length()) {
-        	//Going down
-        	for(int j = 0; j < numRows && i < s.length(); j++) {
-        		sbs[j].append(s.charAt(i++));
-        	}
-        	//Going up
-        	for(int j = numRows - 2; j >= 1 && i < s.length(); j--) {
-        		sbs[j].append(s.charAt(i++));
-        	}
-        }
+        int len = s.length();
         
-        for(int j = 1; j < sbs.length; j++) {
-        	sbs[0].append(sbs[j]);
+        while (i < len) {
+            int line = 0;
+            while (i < len && line < numRows) {
+                lines[line].append(s.charAt(i));
+                line++;
+                i++;
+            }
+            line = numRows - 2;
+            while (i < len && line > 0) {
+                lines[line].append(s.charAt(i));
+                line--;
+                i++;
+            }
+
         }
-        
-        return sbs[0].toString();
+
+        // Finally convert lines back to one string by row.
+        StringBuilder finalSb = new StringBuilder();
+        for (StringBuilder sb: lines) {
+            finalSb.append(sb);
+        }
+        return finalSb.toString();
     }
+
 }
+
+
+

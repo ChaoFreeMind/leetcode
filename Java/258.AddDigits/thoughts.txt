@@ -1,1 +1,0 @@
-Enumerate numbers from 10 to 20, we can find that its related to modular of 9

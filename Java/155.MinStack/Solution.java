@@ -34,3 +34,36 @@ class MinStack {
     	return stack.peek();
     }
 }
+
+// 2nd Way: PriorityQueue FTW
+public class MinStack {
+
+    private Deque<Integer> stack;
+    private PriorityQueue<Integer> minQueue;
+    /** initialize your data structure here. */
+    // Find min again
+    public MinStack() {
+        stack = new LinkedList<>();
+        minQueue = new PriorityQueue<>();
+    }
+    
+    public void push(int x) {
+            stack.push(x);
+            minQueue.add(x);
+    }
+    
+    public void pop() {
+            int top = stack.pop();
+            if (top == minQueue.peek()) {
+                minQueue.poll();
+            }
+    }
+    
+    public int top() {
+        return stack.peek();
+    }
+    
+    public int getMin() {
+        return minQueue.peek();
+    }
+}
