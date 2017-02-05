@@ -1,1 +1,1 @@
-Be very careful with array indexes! Easy to make mistake. Reversal is clever.
+1. Regular array copying: Copy the last k % n elements to the head of the array, and first n - k % n to the last. 

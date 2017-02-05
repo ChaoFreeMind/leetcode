@@ -20,4 +20,47 @@ public class Solution {
         }
         return resList;
     }
+
+    // Method 2: Backtracking
+    public List<String> readBinaryWatch(int num) {
+        List<String> res = new ArrayList<>();
+        int[] nums1 = {1, 2, 4, 8};
+        int[] nums2 = {1, 2, 4, 8, 16, 32};
+
+        for (int i = 0; i <= num; i++) {
+            if (i <= nums1.length && (num - i) <= nums2.length) {
+                Set<Integer> list1 = generateDigits(nums1, i);
+                Set<Integer> list2 = generateDigits(nums2, num - i);
+                for (int hh: list1) {
+                    if (hh >= 12) continue;
+                    for (int ss: list2) {
+                        if (ss >= 60) continue;
+                        res.add(hh + ":" + (ss <= 9 ? "0" + ss : ss));
+                    }
+                }
+            }
+        }
+
+        return res;
+    }
+
+
+    // Return a list of all possible sum of "count" numbers of elements from array nums.
+    private Set<Integer> generateDigits(int[] nums, int count) {
+        Set<Integer> res = new HashSet<>();
+        generateDigitsHelper(res, nums, 0, 0, count);
+        return res;
+    }
+
+    private void generateDigitsHelper(Set<Integer> res, int[] nums, int sum, int pos, int count) {
+        if (count == 0) {
+            res.add(sum);
+            return ;
+        }
+
+        for (int i = pos; i < nums.length; i++) {
+            generateDigitsHelper(res, nums, sum + nums[i], i + 1, count - 1);
+        }
+    }
+
 }

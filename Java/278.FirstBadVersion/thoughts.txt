@@ -1,1 +1,2 @@
-Basic binary serach problem.
+For this problem, this first solution that comes to my mind is linear search the first bad version we got would be the solution. 
+However it is obvious that we could do better with binary search: each time we check the middle version: if the middle version is a bad one, we go left to validate if it is the first bad version; if the middle version is good, then the first bad version must resides in the right half thus we go right. 

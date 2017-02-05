@@ -1,4 +1,4 @@
-
+// First attempt
 public class Solution {
 	
 	//Just a simulation function
