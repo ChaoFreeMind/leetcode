@@ -1,1 +1,3 @@
-Iterate through the string, for each character, we could use it as a pivot to extend it to the left and right. Note that we dont need to cache strings or stringbuilders along the way, all we need is the start of the longest palindrome we found, and the length of it.
+Iterate through the string, for each character, we could use it as a pivot to extend
+ it to the left and right. Note that we dont need to cache strings or stringbuilders 
+ along the way, all we need is the start of the longest palindrome we found, and the length of it.
