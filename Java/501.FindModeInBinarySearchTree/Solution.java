@@ -32,9 +32,9 @@
  * }
  */
 
+// Accepted O(n) time O(n) space solution
 public class Solution {
 
-    // Number to frequency map
     private Map<Integer, Integer> numToFreq = new HashMap<>();
     private int maxFreq = 0;
 

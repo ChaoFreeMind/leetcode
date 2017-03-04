@@ -32,17 +32,20 @@
  * }
  */
 
+// O(n) time, Psuedo O(1) space but not really, check out 
+// https://discuss.leetcode.com/topic/77335/proper-o-1-space/5 for proper O(1)
 public class Solution {
 
     public int[] findMode(TreeNode root) {
-        List<Integer> list = new ArrayList<>();
+        List<Integer> modeList = new ArrayList<>();
         
         Integer prev = null;
         int maxFreq = 0;    
         int curFreq = 0;
-        Integer curVal = null;
+
         TreeNode cur = root;
         Deque<TreeNode> stack = new ArrayDeque<>();
+
         while (cur != null || !stack.isEmpty()) {
             if (cur != null) {
                 stack.push(cur);
@@ -50,24 +53,36 @@ public class Solution {
             } else {
                 // When you reached the left end, pop the stack
                 TreeNode node = stack.pop();
-                if (prev == null) {
-                    curFreq++;
-                    curVal = node.val;
-                    maxFreq = 1;
-                    prev = node.val;
-                    list.add(curVal);
-                }
 
-                if (prev == node.val) {
+                if (prev != null && prev == node.val) {
                     curFreq++;
                     if (curFreq > maxFreq) {
+                        // We have a new mode, clear the list, add node.val to
+                        // the list. We also need to update the maxFreq
+                        modeList.clear();
+                        modeList.add(node.val);
                         maxFreq = curFreq;
-                        list.clear();
-                        list.add(curVal);
-                    } else {
-                        
+                    } else if (curFreq == maxFreq) {
+                        modeList.add(node.val);
                     }
-                } 
+                } else {
+                    // Update prev to current node value.
+                    prev = node.val;
+                    curFreq = 1;
+
+                    if (curFreq > maxFreq) {
+                        // We have a new mode, clear the list, add node.val to
+                        // the list. We also need to update the maxFreq
+                        modeList.clear();
+                        modeList.add(node.val);
+                        maxFreq = curFreq;
+                    } else if (curFreq == maxFreq) {
+                        modeList.add(node.val);
+                    }
+                    maxFreq = Math.max(maxFreq, curFreq);
+
+                }
+
                 cur = node.right;
             }
         }
