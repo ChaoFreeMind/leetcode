@@ -57,8 +57,4 @@ public class Solution {
         return i >= 0 && i < maze.length && j >= 0 && j < maze[0].length && maze[i][j] != 1;
     }
 
-    private boolean hasArrived(int[] point, int[] destination) {
-        return (point[0] == destination[0]) && (point[1] == destination[1]);
-    }
-
 }

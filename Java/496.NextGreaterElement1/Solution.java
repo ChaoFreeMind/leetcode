@@ -43,7 +43,7 @@ public class Solution {
         int[] res = new int[findNums.length];
         Deque<Integer> stack = new ArrayDeque<>();
 
-        // Map number to the first number that is greater than it
+        // Map number to the first number that is greater than it in nums 
         Map<Integer, Integer> map = new HashMap<>(); 
 
         for (int num: nums) {
