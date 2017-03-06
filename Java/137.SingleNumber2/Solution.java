@@ -1,3 +1,4 @@
+// See Solution2.java without extra memory
 public int singleNumber(int[] nums) {
 		int[] bitCount = new int[32];
 		for(int i = 0; i < nums.length; i++)
