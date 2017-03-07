@@ -30,7 +30,47 @@
 
 // This problem is so damn confusing...
 public class Solution {
+    // First we could easily find out which B's satisfy rule 1. From those B's that satisfy rule 1, 
+    // we can see that to satisfy rule 2, those rows that contains the answer would look exactly the
+    // same and the number of those rows would be N. (From rule 1)
+    // For example: 
+    // WBWB
+    // WBWB
+    // WWBB
+    // WWBB
     public int findBlackPixel(char[][] picture, int N) {
-        
+        int res = 0;
+        int row = picture.length, col = picture[0].length;
+        // The number of black pixels in each columns.
+        int[] colBlacks = new int[col];
+        // Map string representation of each row that has N black pixels to its frequency.
+        Map<String, Integer> rowFreqMap = new HashMap<>();
+        for (int i = 0; i < row; i++) {
+            int count = 0;
+            StringBuilder sb = new StringBuilder();
+            for (int j = 0; j < col; j++) {
+                if (picture[i][j] == 'B') {
+                    count++;
+                    colBlacks[j]++;
+                }
+                sb.append(picture[i][j]);
+            }
+            if (count == N) {
+                rowFreqMap.put(sb.toString(), rowFreqMap.getOrDefault(sb.toString(), 0) + 1);
+            }
+        }
+
+        // The map now contains the rows that satisfies half of rule 1. (Columns are not validated 
+        // yet)
+        for (String rowStr: rowFreqMap.keySet()) {
+            if (rowFreqMap.get(rowStr) == N) {
+                for (int i = 0; i < rowStr.length(); i++) {
+                    if (rowStr.charAt(i) == 'B' && colBlacks[i] == N) {
+                        res += N;
+                    }
+                }
+            }
+        }
+        return res;
     }
 }
