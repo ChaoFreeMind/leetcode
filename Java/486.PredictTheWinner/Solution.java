@@ -53,4 +53,6 @@ public class Solution {
             || !predictFirst(nums, left, right - 1, score1, score2 + nums[right]);
     }
 
+    // This problem can also be solved by DP
+
 }
