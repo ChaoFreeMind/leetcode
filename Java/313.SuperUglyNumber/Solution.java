@@ -1,5 +1,6 @@
 public class Solution {
 	//Will have to work on this problem again, did not have a clue as I first saw it.
+    // This solution does not work!!!!
     public int nthSuperUglyNumber(int n, int[] primes) {
  		int[] uglyNums = new int[n];  
  		int[] idx = new int[primes.length];   
