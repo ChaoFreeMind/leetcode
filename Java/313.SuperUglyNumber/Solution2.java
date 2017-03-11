@@ -11,10 +11,11 @@
 // (4) The nth super ugly number is guaranteed to fit in a 32-bit signed integer.
 
 public class Solution {
-    //Will have to work on this problem again, did not have a clue as I first saw it.
+
+    // Basically the same way as the ugly number 2. 
+    // Time complexity: O(n*k) Space: O(n)
     public int nthSuperUglyNumber(int n, int[] primes) {
         int[] dp = new int[n + 1];
-        Arrays.fill(dp, Integer.MAX_VALUE);
         dp[1] = 1;
 
         int[] indexes = new int[primes.length];
@@ -22,7 +23,7 @@ public class Solution {
         // At the beginning all index are starting at 1.
 
         for (int i = 2; i <= n; i++) {
-            
+            dp[i] = Integer.MAX_VALUE;
             for (int j = 0; j < primes.length; j++) {
                 // indexes[j]: the index of dp which primes[j]
                 dp[i] = Math.min(dp[i], primes[j] * dp[indexes[j]]);
