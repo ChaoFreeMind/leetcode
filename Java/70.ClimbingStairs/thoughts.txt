@@ -1,1 +1,4 @@
-First write it with standard dp solution, and then try to get rid of those unused memories
+From first attempt: First write it with standard dp solution, and then try to get rid of those 
+unused memories.
+
+From second attempt: Try to use this problem as a practice for all approaches to solve dp problems

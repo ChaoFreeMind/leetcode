@@ -1,4 +1,4 @@
-//Time O(m*n) Space O(m*n)
+    //Time O(m*n) Space O(m*n)
     public int uniquePaths(int m, int n) {
     	if(m == 0 || n == 0) return 0;
         int[][] dp = new int[m][n]; //int[i][j] denotes the ways to get to i,j from 0,0.
@@ -18,8 +18,8 @@
         return dp[m-1][n-1];
     }
 
-    //Only record one col or row, update the array from left to right
-    //Time O(m * n) Space O(n)/O(m)
+    // Only record one col or row, update the array from left to right
+    // Time O(m * n) Space O(n)/O(m)
     public int uniquePaths(int m, int n) {
         int[] dp = new int[n];
         Arrays.fill(dp, 1);
