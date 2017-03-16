@@ -48,16 +48,15 @@ public class Solution {
     private int bottomUpImproved(int m, int n) {
         // Only keep track of last row
         int[] dp = new int[n];
+        // dp[j] = dp[j-1] + dp[j];
         Arrays.fill(dp, 1);
-        int res = 1;
+        
         for (int i = 1; i < m; i++) {
-            int left = 1;
             for (int j = 1; j < n; j++) {
-                res = dp[j] + left;
-                dp[j] = res;
-                left = res;
+                dp[j] = dp[j - 1] + dp[j];
             }
         }
-        return res;
+
+        return dp[n - 1];
     }
 }
