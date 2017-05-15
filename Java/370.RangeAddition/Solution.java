@@ -33,24 +33,45 @@
 // After applying operation [0, 2, -2]:
 // [-2, 0, 3, 5, 3 ]
 public class Solution {
-	// Straight forward: go through all updates, do each one of the update,
-	// return the final array
-	// Time: O(m * n * n) where m is the number of updates and n is the length
+    // Straight forward: go through all updates, do each one of the update,
+    // return the final array
+    // Time: O(m * n * n) where m is the number of updates and n is the length
     // TLE!!
     // public int[] getModifiedArray(int length, int[][] updates) {
     //     int[] res = new int[length];
 
     //     for (int[] u: updates) {
-    //     	int start = u[0], end = u[1], delta = u[2];
-    //     	for (int i = start; i <= end; i++) {
-    //     		res[i] += delta;
-    //     	}
+    //      int start = u[0], end = u[1], delta = u[2];
+    //      for (int i = start; i <= end; i++) {
+    //          res[i] += delta;
+    //      }
     //     }
 
     //     return res;
     // }
 
-	public int[] getModifiedArray(int length, int[][] updates) {
-		
-	}
+    // For each update, set start index to inc and position end + 1 to -inc.
+    // Sum up in the end
+    public int[] getModifiedArray(int length, int[][] updates) {
+        if (length <= 0) return new int[0];
+        int[] temp = new int[length];
+
+        for (int[] update: updates) {
+            int start = update[0];
+            int end = update[1];
+            int inc = update[2];
+            temp[start] += inc;
+            if (end < length - 1) temp[end + 1] -= inc;
+        }
+        
+        int[] sum = new int[length];
+
+        sum[0] = temp[0];
+
+        for (int i = 1; i < length; i++) {
+            sum[i] = sum[i - 1] + temp[i];
+        }
+
+        return sum;
+    }
 }
