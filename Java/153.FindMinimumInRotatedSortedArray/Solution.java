@@ -8,7 +8,7 @@ public class Solution {
     		if(nums[mid] >= nums[left] && nums[mid] > nums[right]) {//[2,1] [1,2]
     			//Then search the right part for min
     			left = mid + 1;
-    		} else if(nums[mid] < nums[left] && nums[mid] < nums[left]) {
+    		} else if(nums[mid] < nums[left] && nums[mid] < nums[right]) {
     			//Search left for min
     			right = mid;
     		} else {
